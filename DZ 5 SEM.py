@@ -29,12 +29,10 @@
 
 # a = int(input('Введите число а: '))
 # b = int(input('Введите число b: '))
-# n = 0
-# def sum(a,b, n):
-#     if (a + b) != n:
-#         n += 1
-#         sum(a, b, n)
+# def sum(a,b):
+#     if b == 0:
+#         print(a)
 #     else:
-#         print (n)
-#
-# sum(a,b,n)
+#         a += 1
+#         return sum(a, b - 1)
+# sum(a,b)
