@@ -5,15 +5,16 @@
 #
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8
-
+#
 # A = int(input('Введите число А: '))
 # B = int(input('Введите степень числа А: '))
-# n = 1
-# K = A
-# while n < B:
-#     K = K * A
-#     n += 1
-# print(f'{A} в степени {B} = {K}')
+# def stepen(A,B):
+#     if B == 1:
+#         return (A)
+#     else:
+#        return A * stepen(A, B - 1)
+#
+# print(f' число {A} в степени {B} равно {stepen(A,B)}')
 
 
 
