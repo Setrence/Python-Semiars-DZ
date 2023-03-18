@@ -11,30 +11,58 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да
 #     **Вывод:** Парам пам-пам
 
-krichalka = str(input('Введите текст кричалки: ').lower())
-glasnie = str('аоуыэеёиюя')
-list_1 = list(glasnie)
-list = list(krichalka)
+# krichalka = str(input('Введите текст кричалки: ').lower())
+# glasnie = str('аоуыэеёиюя')
+# list_1 = list(glasnie)
+# list = list(krichalka)
+#
+# def rifma (spisok, glasnie):
+#     count = 0
+#     list_1 = []
+#     spisok.append(' ')
+#     for i in spisok:
+#         if i == ' ':
+#             list_1.append(count)
+#             count = 0
+#         for j in glasnie:
+#             if i == j:
+#                 count += 1
+#     return list_1
+#
+# list_2 = rifma(list, glasnie)
+#
+# print(list_2)
+#
+# if len(list_2) == list_2.count(list_2[0]):
+#     print('Парам пам-пам')
+# else:
+#     print('Пам парам')
 
-def rifma (spisok, glasnie):
-    count = 0
-    list_1 = []
-    spisok.append(' ')
-    for i in spisok:
-        if i == ' ':
-            list_1.append(count)
-            count = 0
-        for j in glasnie:
-            if i == j:
-                count += 1
-    return list_1
 
-list_2 = rifma(list, glasnie)
+# Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6),
+# которая принимает в качестве аргумента функцию, вычисляющую элемент по номеру строки и столбца.
+# Аргументы num_rows и num_columns указывают число строк и столбцов таблицы, которые должны быть распечатаны.
+# Нумерация строк и столбцов идет с единицы (подумайте, почему не с нуля). Примечание:
+# бинарной операцией называется любая операция, у которой ровно два аргумента, как, например, у операции умножения.
+#
+# *Пример:*
+#
+# **Ввод:** `print_operation_table(lambda x, y: x * y) `
+# **Вывод:**
+# 1 2 3 4 5 6
+#
+# 2 4 6 8 10 12
+# 3 6 9 12 15 18
+# 4 8 12 16 20 24
+# 5 10 15 20 25 30
+# 6 12 18 24 30 36
 
-print(list_2)
-
-if len(list_2) == list_2.count(list_2[0]):
-    print('Парам пам-пам')
-else:
-    print('Пам парам')
-
+#
+# def print_operation_table(operation, num_rows=4, num_columns=4):
+#     for i in range(1, num_rows + 1):
+#         list = []
+#         for j in range(1, num_columns + 1):
+#             list.append(str(operation(i, j)))
+#         print(" ".join(list))
+#
+# print_operation_table(lambda x, y: x * y)
