@@ -66,8 +66,6 @@ def find_contact(telebook):
 def dell_contact (tele_book, index):
     tele_book.pop(index - 1)
 
-
-
 def menu ():
     while True:
         print('\n1. Открыть файл телефонной книги \n2. Сохранить файл телефонной'
